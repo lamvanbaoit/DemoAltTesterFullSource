@@ -11,19 +11,19 @@ using NUnit.Framework;
 
 namespace Assets.AltTester.Editor.test
 {
-    public class StartPageTests
+    public class FlowLeaderboardPageTests
     {
         AltDriver altDriver;
-        StartPage startPage;
         MainMenuPage mainMenuPage;
+        FlowLeaderboardPage flowLeaderboardPage;
 
         [SetUp]
         public void Setup()
         {
             altDriver = new AltDriver();
-            startPage = new StartPage(altDriver);
-            startPage.Load();
             mainMenuPage = new MainMenuPage(altDriver);
+            mainMenuPage.LoadScene();
+            flowLeaderboardPage = new FlowLeaderboardPage(altDriver);
         }
 
         [TearDown]
@@ -35,19 +35,13 @@ namespace Assets.AltTester.Editor.test
 
 
         [Test]
-        public void TC_01_TestStartPageLoadedCorrectly()
+        public void TC_01_TestFlowLeaderBoard()
         {
-            Assert.True(startPage.IsDisplayed());
+            mainMenuPage.ClickToLeaderBoardButton();
+            //flowLeaderboardPage.GetTextNameAndScrore();
+            //flowLeaderboardPage.ClickToIconClose();
         }
 
-        [Test]
-        public void TC_02_TestStartButtonLoadMainMenu()
-        {
-           
-            startPage.PressStart();
-            Assert.True(mainMenuPage.IsDisplayed());
-            //mainMenuPage.ClickToLeaderBoardButton();
-        }
 
         
     }

@@ -24,18 +24,18 @@ namespace Assets.AltTester.Editor.test
             altDriver = new AltDriver();
             mainMenuPage = new MainMenuPage(altDriver);
             mainMenuPage.LoadScene();
-            mainMenuPage.PressRun();
+            mainMenuPage.ClickToRunButton();
             gamePlayPage = new GamePlay(altDriver);
             pauseOverlayPage = new PauseOverlayPage(altDriver);
             getAnotherChancePage = new GetAnotherChancePage(altDriver);
 
         }
-        //[Test]
+        [Test]
         public void TestGamePlayDisplayedCorrectly()
         {
             Assert.True(gamePlayPage.IsDisplayed());
         }
-        //[Test]
+        [Test]
         public void TestGameCanBePausedAndResumed()
         {
             gamePlayPage.PressPause();
@@ -43,7 +43,7 @@ namespace Assets.AltTester.Editor.test
             pauseOverlayPage.PressResume();
             Assert.True(gamePlayPage.IsDisplayed());
         }
-        //[Test]
+        [Test]
         public void TestGameCanBePausedAndStopped()
         {
             gamePlayPage.PressPause();
@@ -56,7 +56,7 @@ namespace Assets.AltTester.Editor.test
             gamePlayPage.AvoidObstacles(5);
             Assert.True(gamePlayPage.GetCurrentLife() > 0);
         }
-        //[Test]
+        [Test]
         public void TestPlayerDiesWhenObstacleNotAvoided()
         {
             float timeout = 20;

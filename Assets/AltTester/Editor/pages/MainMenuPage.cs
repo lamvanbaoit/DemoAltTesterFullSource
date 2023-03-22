@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Altom.AltDriver;
+using NUnit.Framework;
 
 namespace Assets.AltTester.Editor.pages
 {
@@ -30,10 +31,37 @@ namespace Assets.AltTester.Editor.pages
                 return true;
             return false;
         }
-        public void PressRun()
+        public void ClickToStoreButton()
+        {
+            StoreButton.Tap();
+            var text = StoreButton.GetText();
+            Assert.AreEqual("STORE", text);
+        }
+
+        public void ClickToLeaderBoardButton()
+        {
+            LeaderBoardButton.Tap();
+            var text = LeaderBoardButton.GetText();
+            Assert.AreEqual("LEADERBOARD", text);
+        }
+
+        public void ClickToSettingsButton()
+        {
+            SettingsButton.Tap();
+            var text = SettingsButton.GetText();
+            Assert.AreEqual("Settings", text);
+        }
+
+        public void ClickToMissionButton()
+        {
+            MissionButton.Tap();
+            var text = MissionButton.GetText();
+            Assert.AreEqual("MISSIONS", text);
+        }
+
+        public void ClickToRunButton()  
         {
             RunButton.Tap();
         }
-
     }
 }

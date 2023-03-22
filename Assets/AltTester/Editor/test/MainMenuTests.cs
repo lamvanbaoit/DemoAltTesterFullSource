@@ -17,7 +17,7 @@ namespace Assets.AltTester.Editor.test
         [SetUp]
         public void Setup()
         {
-            altDriver = new AltDriver(port: 13000);
+            altDriver = new AltDriver();
             mainMenuPage = new MainMenuPage(altDriver);
             mainMenuPage.LoadScene();
         }
@@ -30,7 +30,7 @@ namespace Assets.AltTester.Editor.test
         }
 
         [Test]
-        public void TestMainMenuPageLoadedCorrectly()
+        public void TC_01_TestMainMenuPageLoadedCorrectly()
         {
             Assert.True(mainMenuPage.IsDisplayed());
         }

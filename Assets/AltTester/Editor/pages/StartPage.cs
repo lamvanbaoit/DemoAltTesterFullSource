@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Altom.AltDriver;
+using NUnit.Framework;
+using UnityEngine;
 
 namespace Assets.AltTester.Editor.pages
 {
@@ -30,9 +32,10 @@ namespace Assets.AltTester.Editor.pages
         {
             StartButton.Tap();
         }
-        public string GetStartButtonText()
+        public void GetStartButtonText()
         {
-            return StartButton.GetText();
+            var text = StartButton.GetText();
+            Assert.AreEqual("Run!", text);
         }
     }
 }

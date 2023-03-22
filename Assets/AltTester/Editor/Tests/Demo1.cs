@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+﻿ using NUnit.Framework;
 using Altom.AltDriver;
 using System.Diagnostics;
 using UnityEngine;
@@ -84,6 +84,9 @@ public class Demo1
     {
         const string isTextLeaderBoard = "OpenLeaderboard";
         var altobject = altDriver.FindObject(By.PATH, string.Format("/UICamera/Loadout/{0}", isTextLeaderBoard)).Click();
+
+        altDriver.WaitForObject(By.NAME, "PlayerPivot");
+        altDriver.PressKey(AltKeyCode.DownArrow);
         Assert.NotNull(altobject);
         Assert.AreEqual(isTextLeaderBoard, altobject.name);
 
@@ -100,6 +103,7 @@ public class Demo1
         var time = timeEnd - timeStart;
         UnityEngine.Debug.Log("*************************************************************: " + time);
         Assert.Less(time.TotalSeconds, 20);
+        
         var altObject3 = altDriver.FindObjects(By.PATH, "/UICamera/Leaderboard/Background/Display//*//Score");
         foreach (var index in altObject3)
         {
