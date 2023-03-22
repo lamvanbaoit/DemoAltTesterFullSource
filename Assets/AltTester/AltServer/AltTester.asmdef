@@ -25,7 +25,7 @@
         {
             "name": "com.unity.inputsystem",
             "expression": "1.1",
-            "define": "USE_INPUT_SYSTEM_1_3"
+            "define": "USE_INPUT_SYSTEM_1_5"
         }
     ],
     "noEngineReferences": false

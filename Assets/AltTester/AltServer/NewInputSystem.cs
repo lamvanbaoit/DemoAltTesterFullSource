@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Altom.AltTester;
-#if USE_INPUT_SYSTEM_1_3
+#if USE_INPUT_SYSTEM_1_5
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using NUnit.Framework.Internal;
@@ -20,6 +20,7 @@ namespace Altom.AltTester
         private static Dictionary<int, int> inputIdDictionary = new Dictionary<int, int>();
 
         public static InputTestFixture InputTestFixture = new InputTestFixture();
+
         public static NewInputSystem Instance;
         public static Keyboard Keyboard;
         public static Mouse Mouse;
@@ -36,7 +37,9 @@ namespace Altom.AltTester
                 return;
             }
             InputTestFixture = new InputTestFixture();
-#if USE_INPUT_SYSTEM_1_3
+
+#if USE_INPUT_SYSTEM_1_5
+
             TestExecutionContext testExecutionContext = new TestExecutionContext();
             IMethodInfo methodInfo = new MethodWrapper(typeof(TestExample), typeof(TestExample).GetMethod("Test"));
             testExecutionContext.CurrentTest = new TestMethod(methodInfo);
@@ -83,7 +86,7 @@ namespace Altom.AltTester
         public void ResetInput()
         {
             InputTestFixture = new InputTestFixture();
-#if USE_INPUT_SYSTEM_1_3
+#if USE_INPUT_SYSTEM_1_5
             TestExecutionContext testExecutionContext = new TestExecutionContext();
             IMethodInfo methodInfo = new MethodWrapper(typeof(TestExample), typeof(TestExample).GetMethod("Test"));
             testExecutionContext.CurrentTest = new TestMethod(methodInfo);
@@ -476,7 +479,7 @@ namespace Altom.AltTester
     }
 
 }
-#if USE_INPUT_SYSTEM_1_3
+#if USE_INPUT_SYSTEM_1_5
 public class TestExample
 {
     [Test]

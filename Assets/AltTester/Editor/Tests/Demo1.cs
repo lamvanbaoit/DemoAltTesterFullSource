@@ -33,7 +33,7 @@ public class Demo1
         logger.Debug("load level");
     }
 
-    [Test]
+    //[Test]
     public void isPath()
     {
         var a = altDriver.FindObject(By.PATH, "/UICamera/Loadout/StartButton");
@@ -64,7 +64,7 @@ public class Demo1
         Assert.NotNull(isFindObject);
     }
 
-    //[Test]
+    [Test]
     public void Test()  
     {
         var startButton = altDriver.FindObject(By.PATH, "//UICamera/Loadout/StartButton");
@@ -72,8 +72,8 @@ public class Demo1
         startButton.Click();
         logger.Debug("click");
 
-        AltKeyCode kcode = AltKeyCode.A;
-        altDriver.KeyUp(kcode);
+        //AltKeyCode kcode = AltKeyCode.A;
+        //altDriver.KeyUp(kcode);
         //altDriver.KeyDown(kcode, 1);
     }
 

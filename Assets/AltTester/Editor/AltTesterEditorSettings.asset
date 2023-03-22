@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: AltTesterEditorSettings
   m_EditorClassIdentifier: 
   appendToName: 0
-  AdbPath: /usr/local/bin/adb
+  AdbPath: C:\Users\admin\AppData\Local\Android\Sdk\platform-tools\adb.exe
   IProxyPath: /usr/local/bin/iproxy
   XcrunPath: /usr/bin/xcrun
   MyTests:
   - _selected: 0
     _testName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/AltTester.dll
     _testAssembly: AltTester
-    _status: 1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
     _parentName: 
@@ -34,7 +34,7 @@ MonoBehaviour:
   - _selected: 0
     _testName: TestExample
     _testAssembly: AltTester
-    _status: 1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/AltTester.dll
@@ -48,7 +48,7 @@ MonoBehaviour:
   - _selected: 0
     _testName: TestExample.Test
     _testAssembly: AltTester
-    _status: 1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: TestExample
@@ -56,7 +56,7 @@ MonoBehaviour:
     _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 0.0025578
+    _testDuration: 0
     path: Assets/AltTester/Editor/DefaultTestExample.txt
     _testSelectedCount: 0
   - _selected: 1
@@ -104,7 +104,7 @@ MonoBehaviour:
   - _selected: 0
     _testName: IntegrationTests
     _testAssembly: Unity.InputSystem.IntegrationTests
-    _status: -1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
@@ -118,78 +118,29 @@ MonoBehaviour:
   - _selected: 0
     _testName: IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
     _testAssembly: Unity.InputSystem.IntegrationTests
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: IntegrationTests
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: 'UnityEngine.UnityException : FindObjectsOfTypeAll can only
-      be called from the main thread.
-
-      Constructors and field initializers
-      will be executed from the loading thread when loading a scene.
-
-      Don''t
-      use this function in the constructor or field initializers, instead move initialization
-      code to the Awake or Start function.'
-    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.ResourcesAPIInternal.FindObjectsOfTypeAll(System.Type)\r\n 
-      at UnityEngine.ResourcesAPI.FindObjectsOfTypeAll (System.Type systemTypeInstance)
-      [0x00000] in <ba783288ca164d3099898a8819fcec1c>:0 \r\n  at UnityEngine.Resources.FindObjectsOfTypeAll
-      (System.Type type) [0x00006] in <ba783288ca164d3099898a8819fcec1c>:0 \r\n 
-      at UnityEngine.Resources.FindObjectsOfTypeAll[T] () [0x00001] in <ba783288ca164d3099898a8819fcec1c>:0
-      \r\n  at UnityEngine.InputSystem.Editor.EditorPlayerSettingHelpers.GetPropertyOrNull
-      (System.String name) [0x00001] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\InputSystem\\Editor\\Settings\\EditorPlayerSettingHelpers.cs:157
-      \r\n  at UnityEngine.InputSystem.Editor.EditorPlayerSettingHelpers.get_oldSystemBackendsEnabled
-      () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\InputSystem\\Editor\\Settings\\EditorPlayerSettingHelpers.cs:65
-      \r\n  at IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
-      () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\Tests\\IntegrationTests\\IntegrationTests.cs:97
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 0.007313
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Packages/com.unity.addressables/Tests/Editor/Build/BuildScriptPackedIntegrationTests.cs
     _testSelectedCount: 0
   - _selected: 0
     _testName: IntegrationTests.Integration_CanSendAndReceiveEvents
     _testAssembly: Unity.InputSystem.IntegrationTests
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: IntegrationTests
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: 'UnityEngine.UnityException : AllocateDeviceId can only be
-      called from the main thread.
-
-      Constructors and field initializers will
-      be executed from the loading thread when loading a scene.
-
-      Don''t use
-      this function in the constructor or field initializers, instead move initialization
-      code to the Awake or Start function.'
-    _testStackTrace: "  at (wrapper managed-to-native) UnityEngineInternal.Input.NativeInputSystem.AllocateDeviceId()\r\n 
-      at UnityEngine.InputSystem.LowLevel.NativeInputRuntime.AllocateDeviceId ()
-      [0x00001] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\InputSystem\\NativeInputRuntime.cs:27
-      \r\n  at UnityEngine.InputSystem.InputManager.AssignUniqueDeviceId (UnityEngine.InputSystem.InputDevice
-      device) [0x0004f] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\InputSystem\\InputManager.cs:2042
-      \r\n  at UnityEngine.InputSystem.InputManager.AddDevice (UnityEngine.InputSystem.InputDevice
-      device) [0x0004d] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\InputSystem\\InputManager.cs:1093
-      \r\n  at UnityEngine.InputSystem.InputManager.AddDevice (System.String layout,
-      System.String name, UnityEngine.InputSystem.Utilities.InternedString variants)
-      [0x00046] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\InputSystem\\InputManager.cs:1050
-      \r\n  at UnityEngine.InputSystem.InputManager.AddDevice (System.Type type,
-      System.String name) [0x00030] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\InputSystem\\InputManager.cs:1035
-      \r\n  at UnityEngine.InputSystem.InputSystem.AddDevice[TDevice] (System.String
-      name) [0x00001] in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\InputSystem\\InputSystem.cs:1446
-      \r\n  at IntegrationTests.Integration_CanSendAndReceiveEvents () [0x00001]
-      in C:\\Automation\\Unity3D\\Demo\\Library\\PackageCache\\com.unity.inputsystem@1.5.0\\Tests\\IntegrationTests\\IntegrationTests.cs:75
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 0.0029927
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Packages/com.unity.addressables/Tests/Editor/Build/BuildScriptPackedIntegrationTests.cs
     _testSelectedCount: 0
   - _selected: 0
@@ -201,9 +152,9 @@ MonoBehaviour:
     _parentName: IntegrationTests
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: Unstable due to 1252825
+    _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 0.0005275
+    _testDuration: 0
     path: Packages/com.unity.addressables/Tests/Editor/Build/BuildScriptPackedIntegrationTests.cs
     _testSelectedCount: 0
   - _selected: 0
@@ -215,9 +166,9 @@ MonoBehaviour:
     _parentName: IntegrationTests
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: Unstable due to 1252825
+    _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 0.0000208
+    _testDuration: 0
     path: Packages/com.unity.addressables/Tests/Editor/Build/BuildScriptPackedIntegrationTests.cs
     _testSelectedCount: 0
   - _selected: 0
@@ -233,7 +184,7 @@ MonoBehaviour:
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
+    _testSelectedCount: 0
   - _selected: 0
     _testName: Assets
     _testAssembly: AltTesterEditor
@@ -247,7 +198,7 @@ MonoBehaviour:
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
+    _testSelectedCount: 0
   - _selected: 0
     _testName: Assets.AltTester
     _testAssembly: AltTesterEditor
@@ -261,7 +212,7 @@ MonoBehaviour:
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
+    _testSelectedCount: 0
   - _selected: 0
     _testName: Assets.AltTester.Editor
     _testAssembly: AltTesterEditor
@@ -270,12 +221,12 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestSuite
     _parentName: Assets.AltTester
     _testCaseCount: 4
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
+    _testSelectedCount: 0
   - _selected: 0
     _testName: Assets.AltTester.Editor.test
     _testAssembly: AltTesterEditor
@@ -284,50 +235,38 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestSuite
     _parentName: Assets.AltTester.Editor
     _testCaseCount: 4
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
-  - _selected: 1
+    _testSelectedCount: 0
+  - _selected: 0
     _testName: Assets.AltTester.Editor.test.GamePlayTests
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: Assets.AltTester.Editor.test
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
-  - _selected: 1
+    _testSelectedCount: 0
+  - _selected: 0
     _testName: Assets.AltTester.Editor.test.GamePlayTests.TestAvoidingObstacles
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.GamePlayTests
     _testCaseCount: 1
-    _foldOut: 1
-    _testResultMessage: 'System.ArgumentOutOfRangeException : Index was out of range.
-      Must be non-negative and less than the size of the collection.
-
-      Parameter
-      name: index'
-    _testStackTrace: "  at System.Collections.Generic.List`1[T].get_Item (System.Int32
-      index) [0x00009] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 \r\n  at Assets.AltTester.Editor.pages.GamePlay.AvoidObstacles
-      (System.Int32 numberOfObstacles) [0x00089] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\pages\\GamePlay.cs:45
-      \r\n  at Assets.AltTester.Editor.test.GamePlayTests.TestAvoidingObstacles ()
-      [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\test\\GamePlayTests.cs:56
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 1.8237555
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Assets/AltTester/Editor/test/GamePlayTests.cs
     _testSelectedCount: 0
   - _selected: 0
@@ -352,7 +291,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.MainMenuTests
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -380,7 +319,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.StartPageTests
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -394,7 +333,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.StartPageTests
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -415,7 +354,7 @@ MonoBehaviour:
     path: 
     _testSelectedCount: 0
   - _selected: 0
-    _testName: Demo1.isPath
+    _testName: Demo1.Test
     _testAssembly: AltTesterEditor
     _status: 0
     _isSuite: 0
@@ -431,7 +370,7 @@ MonoBehaviour:
   - _selected: 0
     _testName: Demo2
     _testAssembly: AltTesterEditor
-    _status: 0
+    _status: -1
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/AltTesterEditor.dll
@@ -443,17 +382,28 @@ MonoBehaviour:
     path: 
     _testSelectedCount: 0
   - _selected: 0
-    _testName: Demo2.Test
+    _testName: Demo2.TestScroll
     _testAssembly: AltTesterEditor
-    _status: 0
+    _status: -1
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Demo2
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: 
-    _testStackTrace: 
-    _testDuration: 0
+    _testResultMessage: 'Altom.AltDriver.InvalidCommandException : Command `resetInput`
+      not found'
+    _testStackTrace: "  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.handleErrors
+      (Altom.AltDriver.Commands.CommandError error) [0x003e4] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:254
+      \r\n  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.Recvall[T] (Altom.AltDriver.Commands.CommandParams
+      param) [0x0016b] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:121
+      \r\n  at Altom.AltDriver.Commands.AltResetInput.Execute () [0x00014] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\AltCommands\\AltResetInput.cs:11
+      \r\n  at Altom.AltDriver.AltDriver.ResetInput () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:82
+      \r\n  at Demo2.LoadLevel () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\Tests\\Demo2.cs:28
+      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
+    _testDuration: 0.114993
     path: Assets/AltTester/Editor/Tests/Demo2.cs
     _testSelectedCount: 0
   - _selected: 1
@@ -525,7 +475,7 @@ MonoBehaviour:
   - _toBeBuilt: 1
     _path: Assets/Scenes/Start.unity
     _buildIndex: 3
-  platform: 1
+  platform: 0
   StandaloneTarget: 5
   RanInEditor: 1
   ScenePathDisplayed: 1
