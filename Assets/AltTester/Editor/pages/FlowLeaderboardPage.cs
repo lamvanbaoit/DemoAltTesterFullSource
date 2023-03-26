@@ -30,7 +30,7 @@ namespace Assets.AltTester.Editor.pages
 
         public void ClickToIconClose()
         {
-            IconClose.Click();
+            IconClose.Tap();
         }
         
     }

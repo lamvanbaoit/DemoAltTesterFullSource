@@ -10,16 +10,20 @@ using NUnit.Framework;
 
 namespace Assets.AltTester.Editor.test
 {
-    public class MainMenuTests
+    public class FlowStorePageTests
     {
+
         AltDriver altDriver;
         MainMenuPage mainMenuPage;
+        FlowStorePage flowStorePage;
+
         [SetUp]
         public void Setup()
         {
             altDriver = new AltDriver();
             mainMenuPage = new MainMenuPage(altDriver);
             mainMenuPage.LoadScene();
+            flowStorePage = new FlowStorePage(altDriver);
         }
 
         [TearDown]
@@ -29,12 +33,16 @@ namespace Assets.AltTester.Editor.test
             Thread.Sleep(1000);
         }
 
-        [Test]
-        public void TC_01_TestMainMenuPageLoadedCorrectly()
-        {
-            Assert.True(mainMenuPage.IsDisplayed());
-            mainMenuPage.ClickToLeaderBoardButton();
-        }
-    }
-}
 
+        [Test]
+        public void TC_01_Teststore()
+        {
+            mainMenuPage.ClickToStoreButton();
+            flowStorePage.ScrollBottom();
+        }
+
+
+    }
+
+
+}

@@ -39,7 +39,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/AltTester.dll
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: TestExample
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestAssembly
     _parentName: 
     _testCaseCount: 4
-    _foldOut: 0
+    _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
     _testCaseCount: 4
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: IntegrationTests
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: IntegrationTests
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: IntegrationTests
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: IntegrationTests
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -178,13 +178,13 @@ MonoBehaviour:
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
     _parentName: 
-    _testCaseCount: 11
+    _testCaseCount: 12
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 2
+    _testSelectedCount: 1
   - _selected: 0
     _testName: Assets
     _testAssembly: AltTesterEditor
@@ -192,13 +192,13 @@ MonoBehaviour:
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestSuite
     _parentName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/AltTesterEditor.dll
-    _testCaseCount: 9
+    _testCaseCount: 10
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 2
+    _testSelectedCount: 1
   - _selected: 0
     _testName: Assets.AltTester
     _testAssembly: AltTesterEditor
@@ -206,13 +206,13 @@ MonoBehaviour:
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestSuite
     _parentName: Assets
-    _testCaseCount: 9
+    _testCaseCount: 10
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 2
+    _testSelectedCount: 1
   - _selected: 0
     _testName: Assets.AltTester.Editor
     _testAssembly: AltTesterEditor
@@ -220,13 +220,13 @@ MonoBehaviour:
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestSuite
     _parentName: Assets.AltTester
-    _testCaseCount: 9
+    _testCaseCount: 10
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 2
+    _testSelectedCount: 1
   - _selected: 0
     _testName: Assets.AltTester.Editor.test
     _testAssembly: AltTesterEditor
@@ -234,17 +234,45 @@ MonoBehaviour:
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestSuite
     _parentName: Assets.AltTester.Editor
-    _testCaseCount: 9
+    _testCaseCount: 10
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 2
+    _testSelectedCount: 1
   - _selected: 0
     _testName: Assets.AltTester.Editor.test.FlowLeaderboardPageTests
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 1
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: Assets.AltTester.Editor.test
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Assets.AltTester.Editor.test.FlowLeaderboardPageTests.TC_01_TestFlowLeaderBoard
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Assets.AltTester.Editor.test.FlowLeaderboardPageTests
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 2.1384196
+    path: Assets/AltTester/Editor/test/FlowLeaderboardPageTests.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: Assets.AltTester.Editor.test.FlowStorePageTests
+    _testAssembly: AltTesterEditor
+    _status: 1
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: Assets.AltTester.Editor.test
@@ -254,39 +282,25 @@ MonoBehaviour:
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 0
-  - _selected: 0
-    _testName: Assets.AltTester.Editor.test.FlowLeaderboardPageTests.TC_01_TestFlowLeaderBoard
+    _testSelectedCount: 1
+  - _selected: 1
+    _testName: Assets.AltTester.Editor.test.FlowStorePageTests.TC_01_Teststore
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 1
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
-    _parentName: Assets.AltTester.Editor.test.FlowLeaderboardPageTests
+    _parentName: Assets.AltTester.Editor.test.FlowStorePageTests
     _testCaseCount: 1
     _foldOut: 1
-    _testResultMessage: 'Altom.AltDriver.ComponentNotFoundException : Component TMP_InputField
-      not found'
-    _testStackTrace: "  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.handleErrors
-      (Altom.AltDriver.Commands.CommandError error) [0x00354] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:230
-      \r\n  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.Recvall[T] (Altom.AltDriver.Commands.CommandParams
-      param) [0x0016b] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:121
-      \r\n  at Altom.AltDriver.Commands.AltGetText.Execute () [0x00013] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\ObjectCommands\\AltGetText.cs:15
-      \r\n  at Altom.AltDriver.AltObject.GetText () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Common\\AltObject.cs:121
-      \r\n  at Assets.AltTester.Editor.pages.MainMenuPage.ClickToLeaderBoardButton
-      () [0x00014] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\pages\\MainMenuPage.cs:44
-      \r\n  at Assets.AltTester.Editor.test.FlowLeaderboardPageTests.TC_01_TestFlowLeaderBoard
-      () [0x0000d] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\test\\FlowLeaderboardPageTests.cs:41
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 2.0631717
-    path: Assets/AltTester/Editor/test/FlowLeaderboardPageTests.cs
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 4.527613
+    path: Assets/AltTester/Editor/test/FlowStorePageTests.cs
     _testSelectedCount: 0
   - _selected: 0
     _testName: Assets.AltTester.Editor.test.GamePlayTests
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: Assets.AltTester.Editor.test
@@ -300,129 +314,71 @@ MonoBehaviour:
   - _selected: 0
     _testName: Assets.AltTester.Editor.test.GamePlayTests.TestAvoidingObstacles
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.GamePlayTests
     _testCaseCount: 1
-    _foldOut: 1
-    _testResultMessage: 'System.ArgumentOutOfRangeException : Index was out of range.
-      Must be non-negative and less than the size of the collection.
-
-      Parameter
-      name: index'
-    _testStackTrace: "  at System.Collections.Generic.List`1[T].get_Item (System.Int32
-      index) [0x00009] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 \r\n  at Assets.AltTester.Editor.pages.GamePlay.AvoidObstacles
-      (System.Int32 numberOfObstacles) [0x00089] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\pages\\GamePlay.cs:45
-      \r\n  at Assets.AltTester.Editor.test.GamePlayTests.TestAvoidingObstacles ()
-      [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\test\\GamePlayTests.cs:56
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 1.7897888
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Assets/AltTester/Editor/test/GamePlayTests.cs
     _testSelectedCount: 0
   - _selected: 0
     _testName: Assets.AltTester.Editor.test.GamePlayTests.TestGameCanBePausedAndResumed
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.GamePlayTests
     _testCaseCount: 1
-    _foldOut: 1
-    _testResultMessage: 'Altom.AltDriver.CommandResponseTimeoutException : Exception
-      of type ''Altom.AltDriver.CommandResponseTimeoutException'' was thrown.'
-    _testStackTrace: "  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.Recvall[T]
-      (Altom.AltDriver.Commands.CommandParams param) [0x00092] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:104
-      \r\n  at Altom.AltDriver.Commands.AltLoadScene.Execute () [0x00013] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\UnityCommands\\AltLoadScene.cs:16
-      \r\n  at Altom.AltDriver.AltDriver.LoadScene (System.String scene, System.Boolean
-      loadSingle) [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:117
-      \r\n  at Assets.AltTester.Editor.pages.MainMenuPage.LoadScene () [0x00001]
-      in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\pages\\MainMenuPage.cs:18
-      \r\n  at Assets.AltTester.Editor.test.GamePlayTests.Setup () [0x0002a] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\test\\GamePlayTests.cs:26
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 61.0226844
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Assets/AltTester/Editor/test/GamePlayTests.cs
     _testSelectedCount: 0
   - _selected: 0
     _testName: Assets.AltTester.Editor.test.GamePlayTests.TestGameCanBePausedAndStopped
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.GamePlayTests
     _testCaseCount: 1
-    _foldOut: 1
-    _testResultMessage: 'Altom.AltDriver.CommandResponseTimeoutException : Exception
-      of type ''Altom.AltDriver.CommandResponseTimeoutException'' was thrown.'
-    _testStackTrace: "  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.Recvall[T]
-      (Altom.AltDriver.Commands.CommandParams param) [0x00092] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:104
-      \r\n  at Altom.AltDriver.Commands.AltGetServerVersion.Execute () [0x00014]
-      in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\AltCommands\\AltGetServerVersion.cs:12
-      \r\n  at Altom.AltDriver.AltDriver.GetServerVersion () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:102
-      \r\n  at Altom.AltDriver.AltDriver.checkServerVersion () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:58
-      \r\n  at Altom.AltDriver.AltDriver..ctor (System.String host, System.Int32
-      port, System.Boolean enableLogging, System.Int32 connectTimeout) [0x00050]
-      in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:46
-      \r\n  at Assets.AltTester.Editor.test.GamePlayTests.Setup () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\test\\GamePlayTests.cs:24
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 61.0168008
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Assets/AltTester/Editor/test/GamePlayTests.cs
     _testSelectedCount: 0
   - _selected: 0
     _testName: Assets.AltTester.Editor.test.GamePlayTests.TestGamePlayDisplayedCorrectly
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.GamePlayTests
     _testCaseCount: 1
-    _foldOut: 1
-    _testResultMessage: 'Altom.AltDriver.ConnectionTimeoutException : Failed to connect
-      to AltTester on host: 127.0.0.1 port: 13000.'
-    _testStackTrace: "  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.Connect
-      () [0x00101] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:69
-      \r\n  at Altom.AltDriver.AltDriver..ctor (System.String host, System.Int32
-      port, System.Boolean enableLogging, System.Int32 connectTimeout) [0x00044]
-      in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:44
-      \r\n  at Assets.AltTester.Editor.test.GamePlayTests.Setup () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\test\\GamePlayTests.cs:24
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 61.0998754
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Assets/AltTester/Editor/test/GamePlayTests.cs
     _testSelectedCount: 0
   - _selected: 0
     _testName: Assets.AltTester.Editor.test.GamePlayTests.TestPlayerDiesWhenObstacleNotAvoided
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.GamePlayTests
     _testCaseCount: 1
-    _foldOut: 1
-    _testResultMessage: 'Altom.AltDriver.ConnectionTimeoutException : Failed to connect
-      to AltTester on host: 127.0.0.1 port: 13000.'
-    _testStackTrace: "  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.Connect
-      () [0x00101] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:69
-      \r\n  at Altom.AltDriver.AltDriver..ctor (System.String host, System.Int32
-      port, System.Boolean enableLogging, System.Int32 connectTimeout) [0x00044]
-      in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:44
-      \r\n  at Assets.AltTester.Editor.test.GamePlayTests.Setup () [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\test\\GamePlayTests.cs:24
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 61.0191384
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Assets/AltTester/Editor/test/GamePlayTests.cs
     _testSelectedCount: 0
   - _selected: 0
@@ -450,27 +406,27 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 25.5209935
+    _testDuration: 2.0343389
     path: Assets/AltTester/Editor/test/MainMenuTests.cs
     _testSelectedCount: 0
-  - _selected: 1
+  - _selected: 0
     _testName: Assets.AltTester.Editor.test.StartPageTests
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: Assets.AltTester.Editor.test
     _testCaseCount: 2
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 2
-  - _selected: 1
+    _testSelectedCount: 0
+  - _selected: 0
     _testName: Assets.AltTester.Editor.test.StartPageTests.TC_01_TestStartPageLoadedCorrectly
     _testAssembly: AltTesterEditor
-    _status: 1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.StartPageTests
@@ -478,42 +434,27 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.843332
+    _testDuration: 0
     path: Assets/AltTester/Editor/test/StartPageTests.cs
     _testSelectedCount: 0
-  - _selected: 1
+  - _selected: 0
     _testName: Assets.AltTester.Editor.test.StartPageTests.TC_02_TestStartButtonLoadMainMenu
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Assets.AltTester.Editor.test.StartPageTests
     _testCaseCount: 1
     _foldOut: 1
-    _testResultMessage: 'Altom.AltDriver.WaitTimeOutException : Element //StoreButton
-      not loaded after 10 seconds'
-    _testStackTrace: "  at Altom.AltDriver.Commands.AltWaitForObject.Execute () [0x00084]
-      in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\FindObjects\\AltWaitForObject.cs:45
-      \r\n  at Altom.AltDriver.AltDriver.WaitForObject (Altom.AltDriver.By by, System.String
-      value, Altom.AltDriver.By cameraBy, System.String cameraValue, System.Boolean
-      enabled, System.Double timeout, System.Double interval) [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:445
-      \r\n  at Assets.AltTester.Editor.pages.MainMenuPage.get_StoreButton () [0x00000]
-      in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\pages\\MainMenuPage.cs:21
-      \r\n  at Assets.AltTester.Editor.pages.MainMenuPage.IsDisplayed () [0x00001]
-      in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\pages\\MainMenuPage.cs:30
-      \r\n  at Assets.AltTester.Editor.test.StartPageTests.TC_02_TestStartButtonLoadMainMenu
-      () [0x0000d] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\test\\StartPageTests.cs:48
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 12.3226426
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Assets/AltTester/Editor/test/StartPageTests.cs
     _testSelectedCount: 0
   - _selected: 0
     _testName: Demo1
     _testAssembly: AltTesterEditor
-    _status: 1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/AltTesterEditor.dll
@@ -527,7 +468,7 @@ MonoBehaviour:
   - _selected: 0
     _testName: Demo1.Test
     _testAssembly: AltTesterEditor
-    _status: 1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Demo1
@@ -535,13 +476,13 @@ MonoBehaviour:
     _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 0.2401205
+    _testDuration: 0
     path: Assets/AltTester/Editor/Tests/Demo1.cs
     _testSelectedCount: 0
   - _selected: 0
     _testName: Demo2
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: C:/Automation/Unity3D/Demo/Library/ScriptAssemblies/AltTesterEditor.dll
@@ -555,28 +496,15 @@ MonoBehaviour:
   - _selected: 0
     _testName: Demo2.TestScroll
     _testAssembly: AltTesterEditor
-    _status: -1
+    _status: 0
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: Demo2
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: 'Altom.AltDriver.NotFoundException : Object /UICamera/Loadout/MissionPopup/MissionBackground/MissionsContainer/Scroll
-      View/Viewport/Content/MissionEntry(Clone) not found'
-    _testStackTrace: "  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.handleErrors
-      (Altom.AltDriver.Commands.CommandError error) [0x00324] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:222
-      \r\n  at Altom.AltDriver.Commands.DriverCommunicationWebSocket.Recvall[T] (Altom.AltDriver.Commands.CommandParams
-      param) [0x0016b] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\DriverCommunicationWebSocket.cs:121
-      \r\n  at Altom.AltDriver.Commands.AltFindObject.Execute () [0x00013] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\Commands\\FindObjects\\AltFindObject.cs:17
-      \r\n  at Altom.AltDriver.AltDriver.FindObject (Altom.AltDriver.By by, System.String
-      value, Altom.AltDriver.By cameraBy, System.String cameraValue, System.Boolean
-      enabled) [0x00001] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\AltDriver\\AltDriver.cs:150
-      \r\n  at Demo2.TestScroll () [0x00026] in C:\\Automation\\Unity3D\\Demo\\Assets\\AltTester\\Editor\\Tests\\Demo2.cs:54
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 "
-    _testDuration: 0.2372894
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
     path: Assets/AltTester/Editor/Tests/Demo2.cs
     _testSelectedCount: 0
   - _selected: 1

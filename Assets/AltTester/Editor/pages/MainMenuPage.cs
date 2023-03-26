@@ -18,11 +18,11 @@ namespace Assets.AltTester.Editor.pages
             Driver.LoadScene("Main");
         }
 
-        public AltObject StoreButton { get => Driver.WaitForObject(By.NAME, "StoreButton", timeout: 10); }
-        public AltObject LeaderBoardButton { get => Driver.WaitForObject(By.NAME, "OpenLeaderboard", timeout: 10); }
-        public AltObject SettingsButton { get => Driver.WaitForObject(By.NAME, "SettingButton", timeout: 10); }
-        public AltObject MissionButton { get => Driver.WaitForObject(By.NAME, "MissionButton", timeout: 10); }
-        public AltObject RunButton { get => Driver.WaitForObject(By.NAME, "StartButton", timeout: 10); }
+        public AltObject StoreButton { get => Driver.WaitForObject(By.PATH, "/UICamera/Loadout/StoreButton/Text", timeout: 10); }
+        public AltObject LeaderBoardButton { get => Driver.WaitForObject(By.PATH, "/UICamera/Loadout/OpenLeaderboard/Text", timeout: 10); }
+        public AltObject SettingsButton { get => Driver.WaitForObject(By.PATH, "/UICamera/Loadout/SettingButton/Text", timeout: 10); }
+        public AltObject MissionButton { get => Driver.WaitForObject(By.PATH, "/UICamera/Loadout/MissionButton/Text", timeout: 10); }
+        public AltObject RunButton { get => Driver.WaitForObject(By.NAME, "/UICamera/Loadout/StartButton", timeout: 10); }
         public AltObject CharacterName { get => Driver.WaitForObject(By.NAME, "CharName", timeout: 10); }
         public AltObject ThemeName { get => Driver.WaitForObject(By.NAME, "ThemeZone", timeout: 10); }
         public bool IsDisplayed()
@@ -33,30 +33,30 @@ namespace Assets.AltTester.Editor.pages
         }
         public void ClickToStoreButton()
         {
-            StoreButton.Tap();
             var text = StoreButton.GetText();
             Assert.AreEqual("STORE", text);
+            StoreButton.Click();
         }
 
         public void ClickToLeaderBoardButton()
         {
-            LeaderBoardButton.Tap();
             var text = LeaderBoardButton.GetText();
             Assert.AreEqual("LEADERBOARD", text);
+            LeaderBoardButton.Click();
         }
 
         public void ClickToSettingsButton()
         {
-            SettingsButton.Tap();
             var text = SettingsButton.GetText();
             Assert.AreEqual("Settings", text);
+            SettingsButton.Tap();
         }
 
         public void ClickToMissionButton()
         {
-            MissionButton.Tap();
             var text = MissionButton.GetText();
             Assert.AreEqual("MISSIONS", text);
+            MissionButton.Tap();
         }
 
         public void ClickToRunButton()  

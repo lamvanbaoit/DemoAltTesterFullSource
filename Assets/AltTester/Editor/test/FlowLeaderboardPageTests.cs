@@ -15,14 +15,16 @@ namespace Assets.AltTester.Editor.test
     {
         AltDriver altDriver;
         MainMenuPage mainMenuPage;
+        StartPage startPage;
         FlowLeaderboardPage flowLeaderboardPage;
 
         [SetUp]
         public void Setup()
         {
             altDriver = new AltDriver();
+            //mainMenuPage.LoadScene();
             mainMenuPage = new MainMenuPage(altDriver);
-            mainMenuPage.LoadScene();
+            mainMenuPage.LoadScene();   
             flowLeaderboardPage = new FlowLeaderboardPage(altDriver);
         }
 
@@ -38,8 +40,8 @@ namespace Assets.AltTester.Editor.test
         public void TC_01_TestFlowLeaderBoard()
         {
             mainMenuPage.ClickToLeaderBoardButton();
-            //flowLeaderboardPage.GetTextNameAndScrore();
-            //flowLeaderboardPage.ClickToIconClose();
+            flowLeaderboardPage.GetTextNameAndScrore();
+            flowLeaderboardPage.ClickToIconClose();
         }
 
 
